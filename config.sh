@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-APP_GIT_URI="https://github.com/orocrm/crm-application.git"
-START_FROM_TAG="1.9.0"
+APP_GIT_URI="https://github.com/marellocommerce/marello-application.git"
+START_FROM_TAG=""

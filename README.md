@@ -1,5 +1,5 @@
-# OROCRM Docker Image
-The docker image contains source code of OROCrm application.
+# MarelloCommerce Docker Image
+The docker image contains source code of MarelloCommerce application.
 This image are used as part of docker stack (see compose configs).
 
 ## Requirements
@@ -8,24 +8,24 @@ This image are used as part of docker stack (see compose configs).
 2. [Docker Compose](http://docs.docker.com/compose)
 
 ## Usage
-**OROCrm stack with web installation**
+**MarelloCommerce stack with web installation**
 
 For more information [see compose config](compose/webinstall/docker-compose.yml)
 
 Run stack 
 
 ```
-docker-compose -f <(curl https://raw.githubusercontent.com/djocker/orocrm/master/compose/webinstall/docker-compose.yml) up
+docker-compose -f <(curl https://raw.githubusercontent.com/djocker/marellocommerce/master/compose/webinstall/docker-compose.yml) up
 ```
 Navigate to [http://localhost:3080](http://localhost:3080) in your web browser, and install application via web wizard
 
 Stop stack
 
 ```
-docker-compose -f <(curl https://raw.githubusercontent.com/djocker/orocrm/master/compose/webinstall/docker-compose.yml) stop
+docker-compose -f <(curl https://raw.githubusercontent.com/djocker/marellocommerce/master/compose/webinstall/docker-compose.yml) stop
 ```
 
-**OROCrm stack with automated installation**
+**MarelloCommerce stack with automated installation**
 
 For more information [see compose config](compose/autoinstall/docker-compose.yml)
 
@@ -34,14 +34,14 @@ default login: `admin` default password: `admin1111`
 Run stack
 
 ```
-docker-compose -f <(curl https://raw.githubusercontent.com/djocker/orocrm/master/compose/autoinstall/docker-compose.yml) up
+docker-compose -f <(curl https://raw.githubusercontent.com/djocker/marellocommerce/master/compose/autoinstall/docker-compose.yml) up
 ```
 Navigate to [http://localhost:3080](http://localhost:3080) in your web browser, and login
 
 Stop stack
 
 ```
-docker-compose -f <(curl https://raw.githubusercontent.com/djocker/orocrm/master/compose/autoinstall/docker-compose.yml) stop 
+docker-compose -f <(curl https://raw.githubusercontent.com/djocker/marellocommerce/master/compose/autoinstall/docker-compose.yml) stop 
 ```
 
 ## Docker Cloud
