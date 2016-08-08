@@ -1,4 +1,5 @@
 # MarelloCommerce Docker Image
+[![GitHub tag](https://img.shields.io/github/tag/djocker/marellocommerce.svg?maxAge=2592000)](https://hub.docker.com/r/djocker/marellocommerce/tags/) [![Docker Pulls](https://img.shields.io/docker/pulls/djocker/marellocommerce.svg?maxAge=2592000)](https://hub.docker.com/r/djocker/marellocommerce/)  
 The docker image contains source code of MarelloCommerce application.
 This image are used as part of docker stack (see compose configs).
 
