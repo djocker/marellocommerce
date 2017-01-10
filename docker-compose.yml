@@ -8,9 +8,9 @@ db:
     - "3306"
   environment:
     - MYSQL_ROOT_PASSWORD=root
-    - MYSQL_DATABASE=marellocommerce
-    - MYSQL_USER=marellocommerce
-    - MYSQL_PASSWORD=marellocommerce
+    - MYSQL_DATABASE=orocrm
+    - MYSQL_USER=orocrm
+    - MYSQL_PASSWORD=orocrm
   volumes_from:
     - data
 mail:
@@ -19,7 +19,7 @@ mail:
     - "25"
   environment:
     - maildomain=localhost
-    - smtp_user=marellocommerce@localhost:marellocommerce
+    - smtp_user=user@localhost:password
 minion:
   image: djocker/oromono
   links:
@@ -27,13 +27,13 @@ minion:
     - "mail"
   ports:
     - "3080:80"
-    - "8080:8080"
+    - "3088:8080"
   volumes_from:
     - data
     - source_code
   environment:
     - CMD_INIT_BEFORE=
-    - CMD_INIT_CLEAN=sudo -u www-data -E /usr/bin/php /var/www/app/console oro:install --timeout 3600 --force --drop-database --env=prod --user-name=admin --user-firstname=John --user-lastname=Doe --user-password="admin1111" --user-email="johndoe@example.com" --organization-name="Marello" --application-url="http://localhost/"
+    - CMD_INIT_CLEAN=
     - CMD_INIT_INSTALLED=
     - CMD_INIT_AFTER=
     - APP_DB_DRIVER=pdo_mysql
@@ -47,9 +47,9 @@ minion:
     - APP_MAILER_HOST=mail
     - APP_MAILER_PORT=25
     - APP_MAILER_ENCRYPTION=
-    - APP_MAILER_USER=marellocommerce
-    - APP_MAILER_PASSWORD=marellocommerce
+    - APP_MAILER_USER=user
+    - APP_MAILER_PASSWORD=password
     - APP_WEBSOCKET_BACKEND_PORT=8080  
-    - APP_WEBSOCKET_FRONTEND_PORT=8080  
-    - APP_SECRET=123456789  
+    - APP_WEBSOCKET_FRONTEND_PORT=3088  
+    - APP_SECRET=123456789    
     - APP_IS_INSTALLED=
