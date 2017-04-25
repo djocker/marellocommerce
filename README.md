@@ -1,5 +1,8 @@
 # MarelloCommerce Docker Image
-[![GitHub tag](https://img.shields.io/github/tag/djocker/marellocommerce.svg?maxAge=2592000)](https://hub.docker.com/r/djocker/marellocommerce/tags/) [![Docker Pulls](https://img.shields.io/docker/pulls/djocker/marellocommerce.svg?maxAge=2592000)](https://hub.docker.com/r/djocker/marellocommerce/)  
+[![GitHub Tag](https://img.shields.io/github/tag/djocker/marellocommerce.svg)](https://hub.docker.com/r/djocker/marellocommerce/tags/) 
+[![Layers](https://images.microbadger.com/badges/image/djocker/marellocommerce.svg)](https://microbadger.com/images/djocker/marellocommerce "Get your own image badge on microbadger.com") 
+[![Docker Pulls](https://img.shields.io/docker/pulls/djocker/marellocommerce.svg)](https://hub.docker.com/r/djocker/marellocommerce/) 
+[![Build Status](https://travis-ci.org/djocker/marellocommerce.svg?branch=master)](https://travis-ci.org/djocker/marellocommerce)
 
 The docker image with source code of MarelloCommerce application.
 This image is used as part of docker stack (see compose configs).
