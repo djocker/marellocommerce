@@ -8,7 +8,7 @@ ARG GIT_URI="https://github.com/marellocommerce/marello-application.git"
 # branch name or tag 
 # master - for master branch
 # tags/1.9.1 - for 1.9.1 tag 
-ARG GIT_REF="tags/1.0.1"
+ARG GIT_REF="tags/1.1.0"
 
 RUN install-application.sh
 
